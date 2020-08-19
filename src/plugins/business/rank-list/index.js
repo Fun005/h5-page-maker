@@ -8,8 +8,8 @@ Object.assign(Component, {
 	icon: 'iconfont iconbiaodan',
 	valueType: '',
 	defaultStyle: {
-    height: 375,
-    width: 375,
+		height: 375,
+		width: 375,
 		top: 0
 	}
 })
