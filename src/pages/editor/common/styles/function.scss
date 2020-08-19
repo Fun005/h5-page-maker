@@ -1,0 +1,5 @@
+$context: 375px;
+
+@function inke-px2percent($target, $context: $context) {
+  @return (($target / $context) * 100) + 0%;
+}
