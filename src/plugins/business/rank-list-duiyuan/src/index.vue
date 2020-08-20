@@ -228,16 +228,16 @@ export default {
       }
     },
     fetchList() {
-      API.GET_RANK_DATA(this.globalVariable).then((res) => {
-        if (Array.isArray(res.data.list) && res.data.list.length > 0) {
-          this.allList = res.data.list || [];
-          this.allUserInfo = res.data.user_info || [];
-        } else if (this.isPreview) {
-          // 模拟一些数据
-          this.allList = [demoList, demoList, demoList];
-          this.allUserInfo = [demoUserInfo, demoUserInfo, demoUserInfo];
-        }
-      });
+      // API.GET_RANK_DATA(this.globalVariable).then((res) => {
+      //   if (Array.isArray(res.data.list) && res.data.list.length > 0) {
+      //     this.allList = res.data.list || [];
+      //     this.allUserInfo = res.data.user_info || [];
+      //   } else if (this.isPreview) {
+      // 模拟一些数据
+      this.allList = [demoList, demoList, demoList];
+      this.allUserInfo = [demoUserInfo, demoUserInfo, demoUserInfo];
+      // }
+      // });
     },
   },
 };
